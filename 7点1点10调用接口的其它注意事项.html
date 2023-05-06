@@ -1,0 +1,554 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.1.10调用接口的注意事项 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7.html" />
+    
+    
+    <link rel="prev" href="7点1点9SAMAAPP流程.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    2概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    3SAMA协议的运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    4SAMA协议的加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    5SAMA协议生态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    6SAMA协议的激励机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    7SAMA协议的开发接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7点1点1概述.html">
+            
+                <a href="7点1点1概述.html">
+            
+                    
+                    7.1.1概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="7点1点2开发依赖的相关库.html">
+            
+                <a href="7点1点2开发依赖的相关库.html">
+            
+                    
+                    7.1.2开发依赖的相关库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="7点1点3私钥和公钥地址.html">
+            
+                <a href="7点1点3私钥和公钥地址.html">
+            
+                    
+                    7.1.3私钥和公钥地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="7点1点4节点状态.html">
+            
+                <a href="7点1点4节点状态.html">
+            
+                    
+                    7.1.4节点状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="7点1点5节用户状态.html">
+            
+                <a href="7点1点5节用户状态.html">
+            
+                    
+                    7.1.5用户状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="7点1点6节AUDITOR和WORKER服务.html">
+            
+                <a href="7点1点6节AUDITOR和WORKER服务.html">
+            
+                    
+                    7.1.6AUDITOR和WORKER服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="7点1点7节加密.html">
+            
+                <a href="7点1点7节加密.html">
+            
+                    
+                    7.1.7加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="7点1点8节组包.html">
+            
+                <a href="7点1点8节组包.html">
+            
+                    
+                    7.1.8组包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="7点1点9SAMAAPP流程.html">
+            
+                <a href="7点1点9SAMAAPP流程.html">
+            
+                    
+                    7.1.9SamaAPP流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="7点1点10调用接口的其它注意事项.html">
+            
+                <a href="7点1点10调用接口的其它注意事项.html">
+            
+                    
+                    7.1.10调用接口的注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    8SAMA协议的常规问题解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    9SMAA协议的产品样例（GPT产品）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    点击获取更多资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >7.1.10调用接口的注意事项</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="7110-&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;">7.1.10 &#x8C03;&#x7528;&#x63A5;&#x53E3;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h1>
+<h2 id="1-socks5&#x6570;&#x636E;&#x683C;&#x5F0F;">1. SOCKS5&#x6570;&#x636E;&#x683C;&#x5F0F;<br></h2>
+<p>1&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x6570;&#x503C;&#x4E3A;1&#x65F6;&#x4EE3;&#x8868;ipv4&#xFF0C;&#x6570;&#x503C;&#x4E3A;3&#x65F6;&#x4EE3;&#x8868;domain&#xFF0C;&#x6570;&#x503C;&#x4E3A;4&#x65F6;&#x4EE3;&#x8868;ipv6<br></p>
+<p>&#x2003;&#x2002;(a) IPV4<br></p>
+<blockquote>
+<blockquote>
+<p>1) 4&#x4E2A;&#x5B57;&#x8282;internet IP<br>
+2) 2&#x4E2A;&#x5B57;&#x8282;internet PORT<br></p>
+</blockquote>
+</blockquote>
+<p>&#x2003;&#x2002;(b) DOMAIN<br></p>
+<blockquote>
+<blockquote>
+<p>1) 1&#x4E2A;&#x5B57;&#x8282;&#x4EE3;&#x8868;&#x57DF;&#x540D;&#x957F;&#x5EA6;<br>
+2) internet &#x57DF;&#x540D;<br>
+3) internet PORT<br></p>
+</blockquote>
+</blockquote>
+<p>&#x2003;&#x2002;(c) IPV6<br></p>
+<blockquote>
+<blockquote>
+<p>1) 16&#x4E2A;&#x5B57;&#x8282;internet IP<br>
+2) 2&#x4E2A;&#x5B57;&#x8282;internet PORT<br></p>
+</blockquote>
+</blockquote>
+<p>2&#x4E2A;&#x5B57;&#x8282;  &#x4FDD;&#x7559;&#x5B57;&#x6BB5;(0050)<br></p>
+<p>&#x771F;&#x5B9E;&#x6570;&#x636E;<br>
+&#x2003;&#x2002;example:<br></p>
+<blockquote>
+<blockquote>
+<p>GET <a href="http://www.baidu.com/" target="_blank">http://www.baidu.com/</a> HTTP/1.1<br>
+Host: www.baidu.com<br>
+User-Agent: curl/7.83.1<br>
+Accept: <em>/</em><br>
+Proxy-Connection: Keep-Alive<br></p>
+</blockquote>
+</blockquote>
+<h2 id="2-&#x7AEF;&#x53E3;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;">2. &#x7AEF;&#x53E3;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;<br></h2>
+<pre><code class="lang-js"><span class="hljs-number">1.</span>publicKey(&#x534F;&#x8BAE;&#x4E2D;&#x5B57;&#x6BB5;workKey)
+<span class="hljs-number">2.</span> <span class="hljs-keyword">for</span>(uint32_t i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; ++i)
+{
+key2 = i * <span class="hljs-number">1000</span> + <span class="hljs-number">1328486049</span>;
+}
+<span class="hljs-number">3.</span>&#x6700;&#x5C0F;&#x7AEF;&#x53E3;
+<span class="hljs-number">4.</span>&#x6700;&#x5927;&#x7AEF;&#x53E3;
+
+uint16_t GetRandomPort(<span class="hljs-keyword">const</span> std::string&amp; key, uint32_t key2, uint16_t min_port, uint16_t max_port)
+{
+std::string tmpStr = key + std::to_string(key2);
+     <span class="hljs-keyword">return</span>  (((uint32_t)XXH32(tmpStr.c_str(), tmpStr.size(),<span class="hljs-number">5623453345</span>u) % (max_port - min_port)) + min_port);
+}
+</code></pre>
+<h2 id="3-ipstr&#x4E0E;int32&#x8F6C;&#x5316;">3. IPSTR&#x4E0E;int32&#x8F6C;&#x5316;<br></h2>
+<pre><code class="lang-js">uint IpToInt(string ip)
+{
+string[] items = ip.Split(<span class="hljs-string">&apos;.&apos;</span>);
+<span class="hljs-keyword">return</span> uint.Parse(items[<span class="hljs-number">3</span>]) &lt;&lt; <span class="hljs-number">24</span> | uint.Parse(items[<span class="hljs-number">2</span>]) &lt;&lt; <span class="hljs-number">16</span>
+       | uint.Parse(items[<span class="hljs-number">1</span>]) &lt;&lt; <span class="hljs-number">8</span> | uint.Parse(items[<span class="hljs-number">0</span>]);
+}
+</code></pre>
+<h2 id="4-workport&#x8F6C;int16">4. WorkPort&#x8F6C;int16</h2>
+<pre><code class="lang-js">uint16_t PortToShort(int port)
+{
+<span class="hljs-keyword">return</span> (uint16_t)(((port &amp; <span class="hljs-number">0xff</span>) &lt;&lt; <span class="hljs-number">8</span>) | ((port &gt;&gt; <span class="hljs-number">8</span>) &amp; <span class="hljs-number">0xff</span>));
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7点1点9SAMAAPP流程.html" class="navigation navigation-prev " aria-label="Previous page: 7.1.9SamaAPP流程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7.html" class="navigation navigation-next " aria-label="Next page: 8SAMA协议的常规问题解决方案">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.1.10调用接口的注意事项","level":"1.17","depth":1,"next":{"title":"8SAMA协议的常规问题解决方案","level":"1.18","depth":1,"path":"7.md","ref":"7.md","articles":[]},"previous":{"title":"7.1.9SamaAPP流程","level":"1.16","depth":1,"path":"7点1点9SAMAAPP流程.md","ref":"7点1点9SAMAAPP流程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"7点1点10调用接口的其它注意事项.md","mtime":"2023-05-05T09:53:08.935Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-06T06:23:05.831Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
